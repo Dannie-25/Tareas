@@ -34,4 +34,8 @@ export class TareasOdmaComponent implements OnInit {
     //console.log('A borrar' + index);
     this.listTareas.splice(index, 1);
   }
+
+  actualizarTarea(index: number, tarea: Tarea): void{
+    this.listTareas[index].estado = !tarea.estado;
+  }
 }
